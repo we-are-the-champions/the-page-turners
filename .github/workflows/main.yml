@@ -36,21 +36,21 @@ jobs:
         run: bit tag --persist
       - name: Export components
         run: bit export
-     - name: Set up GitHub credentials
-  run: |
-    git config --global user.name "${{ github.actor }}"
-    git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-- name: Authenticate with GitHub
-  uses: actions/github-script@v3
-  with:
-    github-token: ${{ secrets.GITHUB_TOKEN }}
-    script: |
-      github.authenticate({
-        type: 'token',
-        token: context.github_token
-      })
-- name: Commit and push changes
-  run: |
-    git add .bitmap
-    git commit -m "update .bitmap with new component versions (automated). --skip-ci"
-    git push
+      - name: Set up GitHub credentials
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+      - name: Authenticate with GitHub
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.authenticate({
+              type: 'token',
+              token: context.github_token
+            })
+      - name: Commit and push changes
+        run: |
+          git add .bitmap
+          git commit -m "update .bitmap with new component versions (automated). --skip-ci"
+          git push
