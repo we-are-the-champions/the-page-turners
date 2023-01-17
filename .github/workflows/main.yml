@@ -40,15 +40,16 @@ jobs:
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+      - name: install @octokit/auth-token
+        run: npm install @octokit/auth-token
       - name: Authenticate with GitHub
         uses: actions/github-script@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.authenticate({
-              type: 'token',
-              token: context.github_token
-            })
+            const { createTokenAuth } = require("@octokit/auth-token");
+            const authentication = createTokenAuth(context.github_token);
+            const octokit = new Octokit({ auth: authentication });
       - name: Commit and push changes
         run: |
           git add .bitmap
