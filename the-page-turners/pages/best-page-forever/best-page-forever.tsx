@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 export type BestPageForeverProps = {
   /**
-   * a node to be rendered in the special component.
+   * a node to be rendered in the special component
    */
   children?: ReactNode;
 };
