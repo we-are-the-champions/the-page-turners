@@ -1,0 +1,1 @@
+export { MfeFtwApp } from './app';
