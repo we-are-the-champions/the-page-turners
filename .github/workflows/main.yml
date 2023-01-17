@@ -41,7 +41,10 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
       - name: Install @octokit/core
-        run: npm install @octokit/core --prefix . @octokit/core
+        uses: actions/npm@v2
+        with:
+           command: install
+           args: @octokit/core
       - name: Authenticate with GitHub
         uses: actions/github-script@v3
         with:
