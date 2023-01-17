@@ -11,7 +11,7 @@
 {
     "apps/mfe-ftw": {
         "scope": "we-are-the-champions.the-app-timizers",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "the-app-timizers/apps/mfe-ftw",
         "nextVersion": {
@@ -23,7 +23,7 @@
     },
     "pages/best-page-forever": {
         "scope": "we-are-the-champions.the-page-turners",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "the-page-turners/pages/best-page-forever",
         "nextVersion": {
