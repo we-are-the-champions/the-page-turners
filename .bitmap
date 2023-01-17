@@ -13,13 +13,25 @@
         "scope": "we-are-the-champions.the-app-timizers",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "the-app-timizers/apps/mfe-ftw"
+        "rootDir": "the-app-timizers/apps/mfe-ftw",
+        "nextVersion": {
+            "version": "patch",
+            "message": "my message (bump dependencies versions)",
+            "username": "nitsan770",
+            "email": "77798308+NitsanCohen770@users.noreply.github.com"
+        }
     },
     "pages/best-page-forever": {
         "scope": "we-are-the-champions.the-page-turners",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "the-page-turners/pages/best-page-forever"
+        "rootDir": "the-page-turners/pages/best-page-forever",
+        "nextVersion": {
+            "version": "patch",
+            "message": "my message",
+            "username": "nitsan770",
+            "email": "77798308+NitsanCohen770@users.noreply.github.com"
+        }
     },
     "$schema-version": "15.0.0"
 }
