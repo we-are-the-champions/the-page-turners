@@ -36,23 +36,10 @@ jobs:
         run: bit tag --persist
       - name: Export components
         run: bit export
-      - name: Set up GitHub credentials
+     - name: Commit changes made to .bitmap
         run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-      - name: Install @octokit/core
-        run: | 
-          run: npm init
-          npm ci --prefix .
-      - name: Authenticate with GitHub
-        uses: actions/github-script@v3
-        with:
-          script: |
-            const { createTokenAuth } = require("@octokit/core");
-            const authentication = createTokenAuth(context.github_token);
-            const octokit = new Octokit({ auth: authentication });
-      - name: Commit and push changes
-        run: |
+          git config --global user.name '${{ github.actor }}'
+          git config --global user.email '${{ github.actor }}@users.noreply.github.com'
           git add .bitmap
           git commit -m "update .bitmap with new component versions (automated). --skip-ci"
           git push
