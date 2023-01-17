@@ -23,8 +23,6 @@ jobs:
         run: npm i -g @teambit/bvm
       - name: Install latest Bit version
         run: bvm install
-      - name: add bvm bin folder to path
-        run: echo "$HOME/bin" >> $GITHUB_PATH
       - name: Set up bit config
         run: |
           bit config set analytics_reporting false
@@ -40,12 +38,11 @@ jobs:
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-     - name: Install @octokit/core
-       run: npm install @octokit/core
+      - name: Install @octokit/core
+        run: npm install @octokit/core
       - name: Authenticate with GitHub
         uses: actions/github-script@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { createTokenAuth } = require("@octokit/core");
             const authentication = createTokenAuth(context.github_token);
