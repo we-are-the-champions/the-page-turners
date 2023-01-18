@@ -1,0 +1,24 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.pageTitle {
+  margin-bottom: 1rem;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageIllustration {
+  max-width: 50%;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}

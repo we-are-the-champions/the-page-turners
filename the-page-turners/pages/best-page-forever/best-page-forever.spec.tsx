@@ -1,9 +1,14 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { BasicBestPageForever } from './best-page-forever.composition';
+import { BestPageForeverComposition } from './best-page-forever.composition';
 
-it('should render with the correct text', () => {
-  const { getByText } = render(<BasicBestPageForever />);
-  const rendered = getByText('hello world!');
-  expect(rendered).toBeTruthy();
+describe('BestPageForeverComposition', () => {
+  it('should render the component', () => {
+    const { getByText } = render(<BestPageForeverComposition />);
+    expect(
+      getByText(
+        'Integrating Micro Frontends with Bit and Git for Easier Collaboration'
+      )
+    ).toBeInTheDocument();
+  });
 });
