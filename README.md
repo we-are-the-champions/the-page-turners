@@ -1,14 +1,10 @@
-# Build-Time Integration of Micro Frontends(MFEs)
+# Micro Frontends (MFEs) with Bit and Git
 
-This example demonstrates a build-time integration of Micro Frontends (MFEs) using Bit and Git. The example is set up with 2 teams, one GitHub organization called "we-are-the-champions", and one [Bit organization](https://bit.cloud/we-are-the-champions) with the same name. The example also includes 3 scopes, with one scope owned by ["the-header-herders"](https://bit.cloud/we-are-the-champions/the-header-herders) team that maintains the [header component](https://bit.cloud/we-are-the-champions/the-header-herders/header), another scope owned by ["the-page-turners"](https://bit.cloud/we-are-the-champions/the-page-turners) team that maintains the [page component](https://bit.cloud/we-are-the-champions/the-page-turners/best-page-forever), and a shared scope called ["the-app-timizers"](https://bit.cloud/we-are-the-champions/the-app-timizers/) that is used by both teams.
+This example demonstrates the use of Bit and Git for managing Micro Frontends (MFEs) in a multi-team setup. The example is set up with 2 teams, one GitHub organization called "we-are-the-champions", and one [Bit organization](https://bit.cloud/we-are-the-champions) with the same name. The example also includes 3 scopes, with one scope owned by ["the-header-herders"](https://bit.cloud/we-are-the-champions/the-header-herders) team that maintains the [header component](https://bit.cloud/we-are-the-champions/the-header-herders/header), another scope owned by ["the-page-turners"](https://bit.cloud/we-are-the-champions/the-page-turners) team that maintains the [page component](https://bit.cloud/we-are-the-champions/the-page-turners/best-page-forever), and a shared scope called ["the-app-timizers"](https://bit.cloud/we-are-the-champions/the-app-timizers/) that is used by both teams.
 
 ## Repositories
 
 The example includes 2 repositories, workspaces, that are version-controlled with Git and Github. Each repo has the team name. One workspace has a component by team A and an app component from the shared scope, while the other workspace has a component by team B and an app component from the shared scope.
-
-## Build-Time Integration
-
-The teams can update their own scope, and this update will propagate to the shared app component, allowing each team to release new updates independently without having to rely on runtime integration.
 
 ## GitHub Actions
 
