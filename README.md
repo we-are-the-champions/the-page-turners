@@ -1,6 +1,6 @@
 # Build-Time Integration of Micro Frontends(MFEs)
 
-This example demonstrates a build-time integration of Micro Frontends (MFEs) using Bit and Git. The example is set up with 2 teams, one GitHub organization called "we-are-the-champions", and one Bit organization with the same name. The example also includes 3 scopes, with one scope owned by "the-header-herders" team that maintains the header component, another scope owned by "the-page-turners" team that maintains the page component, and a shared scope called "the-app-timizers" that is used by both teams.
+This example demonstrates a build-time integration of Micro Frontends (MFEs) using Bit and Git. The example is set up with 2 teams, one GitHub organization called "we-are-the-champions", and one [Bit organization](https://bit.cloud/we-are-the-champions) with the same name. The example also includes 3 scopes, with one scope owned by ["the-header-herders"](https://bit.cloud/we-are-the-champions/the-header-herders) team that maintains the [header component](https://bit.cloud/we-are-the-champions/the-header-herders/header), another scope owned by ["the-page-turners"](https://bit.cloud/we-are-the-champions/the-page-turners) team that maintains the [page component](https://bit.cloud/we-are-the-champions/the-page-turners/best-page-forever), and a shared scope called ["the-app-timizers"](https://bit.cloud/we-are-the-champions/the-app-timizers/) that is used by both teams.
 
 ## Repositories
 
