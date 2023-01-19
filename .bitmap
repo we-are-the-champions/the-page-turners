@@ -11,7 +11,7 @@
 {
     "apps/mfe-ftw": {
         "scope": "we-are-the-champions.the-app-timizers",
-        "version": "0.0.13",
+        "version": "0.0.14",
         "mainFile": "index.ts",
         "rootDir": "the-app-timizers/apps/mfe-ftw"
     },

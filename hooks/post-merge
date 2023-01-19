@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bit import && bit checkout head && bit link && bit compile
