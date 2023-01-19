@@ -13,25 +13,13 @@
         "scope": "we-are-the-champions.the-app-timizers",
         "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "the-app-timizers/apps/champions-app",
-        "nextVersion": {
-            "version": "patch",
-            "message": "update page (bump dependencies versions)",
-            "username": "nitsan770",
-            "email": "77798308+NitsanCohen770@users.noreply.github.com"
-        }
+        "rootDir": "the-app-timizers/apps/champions-app"
     },
     "pages/best-page-forever": {
         "scope": "we-are-the-champions.the-page-turners",
         "version": "0.0.12",
         "mainFile": "index.ts",
-        "rootDir": "the-page-turners/pages/best-page-forever",
-        "nextVersion": {
-            "version": "patch",
-            "message": "update page",
-            "username": "nitsan770",
-            "email": "77798308+NitsanCohen770@users.noreply.github.com"
-        }
+        "rootDir": "the-page-turners/pages/best-page-forever"
     },
     "$schema-version": "15.0.0"
 }
