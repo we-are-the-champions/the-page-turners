@@ -1,11 +1,11 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { MfeFtwApp } from './app';
+import { ChampionsApp } from './app';
 
-export const MfeFtwBasic = () => {
+export const ChampionsAppBasic = () => {
   return (
     <MemoryRouter>
-      <MfeFtwApp />
+      <ChampionsApp />
     </MemoryRouter>
   );
 };

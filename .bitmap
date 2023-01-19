@@ -9,11 +9,11 @@
  */
 
 {
-    "apps/mfe-ftw": {
+    "apps/champions-app": {
         "scope": "we-are-the-champions.the-app-timizers",
-        "version": "0.0.14",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "the-app-timizers/apps/mfe-ftw"
+        "rootDir": "the-app-timizers/apps/champions-app"
     },
     "pages/best-page-forever": {
         "scope": "we-are-the-champions.the-page-turners",
