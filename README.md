@@ -6,7 +6,7 @@ This example demonstrates the use of Bit and Git for managing Micro Frontends (M
 
 The example includes a deployed app that is built using the components from the example. The app is deployed on [Netlify](https://www.netlify.com/), and you can access it [here](https://the-champions-app.netlify.app/).
 
-The app is deployed using the Netlify-Deployer component('https://bit.cloud/teambit/cloud-providers/deployers/netlify') and it is automatically deployed every time changes are pushed to the main branch (after soft-tagging the components).
+The app is deployed using the [Netlify-Deployer component](https://bit.cloud/teambit/cloud-providers/deployers/netlify) and it is automatically deployed every time changes are pushed to the main branch (after soft-tagging the components).
 
 ## Repositories
 
