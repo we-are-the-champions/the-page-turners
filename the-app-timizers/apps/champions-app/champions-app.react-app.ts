@@ -15,7 +15,7 @@ export const MfeFtwApp: ReactAppOptions = {
   name: 'champions-app',
   entry: [require.resolve('./champions-app.app-root')],
   deploy: Netlify.deploy(netlifyConfig),
-  favicon: require.resolve('./champions.png'),
+  favicon: require.resolve('./favicon.png'),
 };
 
 export default MfeFtwApp;

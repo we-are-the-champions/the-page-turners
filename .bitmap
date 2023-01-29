@@ -13,7 +13,13 @@
         "scope": "we-are-the-champions.the-app-timizers",
         "version": "0.0.5",
         "mainFile": "index.ts",
-        "rootDir": "the-app-timizers/apps/champions-app"
+        "rootDir": "the-app-timizers/apps/champions-app",
+        "nextVersion": {
+            "version": "patch",
+            "message": "final touch",
+            "username": "nitsan770",
+            "email": "77798308+NitsanCohen770@users.noreply.github.com"
+        }
     },
     "pages/best-page-forever": {
         "scope": "we-are-the-champions.the-page-turners",
