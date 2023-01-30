@@ -1,3 +1,9 @@
 #!/bin/sh
-
+# This post-merge hook in git automatically updates the repository with the latest version of the shared shell app after a successful merge. 
+# It does this by running the following commands:
 bit import && bit checkout head && bit link && bit compile
+
+# The shared shell app is maintained by both the-page-turners and the header-herders teams. 
+# The latest updates are retrieved from the components scope, which is considered the only source of truth for this component.
+
+# the post-merge hook runs automatically, ensuring that the repository stays up-to-date with the latest version of the shared shell app without any manual intervention.ד
